@@ -22,6 +22,12 @@
                 <a href="product.html">Shop</a>
                 <a href="4.html">Cart</a>
             </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Search for products...">
                 <i class="fas fa-search"></i>
@@ -299,4 +305,11 @@
     </footer>
 
 </body>
+
 </html>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('active');
+    }
+</script>
